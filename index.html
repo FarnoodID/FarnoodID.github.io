@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farnood</title>
+
+  <meta name="description" content="Applied data science, built from first principles." />
+  
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" defer></script>
+  <script src="particles.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="logo">Farnood</div>
+    <nav>
+
+      <ul class="desktop-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
+        <span class="knob"></span>
+      </button>
+      <button id="menuToggle" class="menu-btn" aria-expanded="false" aria-label="Open menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+    </nav>
+  </header>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-text">
+        <h1>Hello, <span id="typing-container"></span><span class="cursor"></span></h1>
+        <p class="lead">Applied data science, built from first principles.</p>
+        <a class="btn" href="#projects">Selected Work</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section fade-section">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-card-content">
+              <div>
+                <h3>Secure Genomic Data Sharing</h3>
+                <p>An implementation of a complex cryptographic protocol (AB-PSI) to allow for the comparison of sensitive genomic data while preserving absolute privacy.</p>
+              </div>
+              
+              <div>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Cryptography</span>
+                  <span class="project-tag">Data Privacy</span>
+                  <span class="project-tag">Bioinformatics</span>
+                </div>
+                <a href="#" class="project-link" data-project-id="project1">View Project Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-card-content">
+              
+              <div>
+                <h3>Efficient Model Editing for Federated Learning</h3>
+                <p>A novel hybrid strategy, pTaLoS, designed to accelerate convergence in distributed systems. This approach combines global model editing with client-level personalization to dramatically improve performance on heterogeneous (non-IID) data.</p>
+              </div>
+              
+              <div>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">Federated Learning</span>
+                  <span class="project-tag">Distributed Systems</span>
+                </div>
+                <a href="#" class="project-link" data-project-id="project2">View Project Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="project-card">
+            <div class="project-card-content">
+              
+              <div>
+                <h3>Asynchronous Network Proxy</h3>
+                <p>A "first principles" exploration of network systems. This C++ SOCKS5 proxy is built from the ground up to manage raw TCP/UDP sessions, handle protocol negotiation, and perform complex, regex-based filtering using asynchronous I/O.</p>
+              </div>
+              
+              <div>
+                <div class="project-tags">
+                  <span class="project-tag">C++</span>
+                  <span class="project-tag">Networking</span>
+                  <span class="project-tag">Systems Programming</span>
+                  <span class="project-tag">Boost.Asio</span>
+                </div>
+                <a href="#" class="project-link" data-project-id="project3">View Project Details &rarr;</a>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="about fade-section">
+      <div class="container">
+        <h2>My Approach</h2>
+        <p class="about-text">
+          I’ve always been driven by a need to understand how things work. I wasn't satisfied just <em>using</em> software; I needed to know how a compiler translates code, how an operating system manages memory, and how data securely travels across a network.
+        </p>
+        <p class="about-text">
+          This curiosity led me to a foundational study in computer science at <strong>Amirkabir University of Technology (Tehran Polytechnic)</strong>. My focus was on "first principles": core systems, cryptography, and network security. I graduated <strong>ranked in the top 5</strong> of my 120-person class.
+        </p>
+        <p class="about-text">
+          Today, I'm expanding on that foundation at <strong>Politecnico di Torino</strong>, applying that same systems-level thinking to data science and machine learning. My work explores how to build intelligent systems that aren't just powerful, but also <em>secure</em>, <em>efficient</em>, and <em>distributed</em>. This is what draws me to complex fields like federated learning and privacy-preserving computation.
+        </p>
+        <p class="about-text">
+          I also believe the truest measure of understanding is the ability to teach it. My time as a teaching assistant for core subjects, ranging from <strong>Data Structures & Algorithms</strong> and <strong>Operating Systems</strong> to <strong>Databases</strong> and <strong>Artificial Intelligence</strong>, wasn't just a job; it was the ultimate test of my own knowledge.
+        </p>
+        <p class="about-text">
+          When I'm not at the keyboard, I'm usually mountain climbing, planning my next trip, or in the middle of a chess game.
+        </p>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer fade-section">
+      <div class="container">
+        <h2>Connect</h2>
+        <p>Always open to new challenges and collaborations.</p>
+        <p class="email"><a href="mailto:sotoudehfarnood@gmail.com">sotoudehfarnood@gmail.com</a></p>
+        
+        
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/sotoudehfarnood" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+  
+          <a href="https://github.com/FarnoodID" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+        </div>
+
+        
+        <p class="copy">&copy; <span id="year"></span> Farnood</p>
+      </div>
+    </footer>
+  </main>
+
+  
+  <div id="projectModalOverlay" class="modal-overlay"></div>
+
+  
+  <div id="projectModalPanel" class="modal-panel">
+    <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close project details">&times;</button>
+    
+    <div class="modal-scroll-wrapper">
+      <div id="modalContentHost"></div>
+    </div>
+  </div>
+
+  
+  <template id="project1">
+    
+    <div class="project-modal-content">
+
+      
+      <header class="project-modal-header">
+        <h1 class="project-modal-title">Secure Genomic Data Sharing</h1>
+        <p class="project-modal-subtitle">
+          A Python-based implementation of a complex cryptographic protocol for privacy-preserving data analysis.
+        </p>
+      </header>
+
+      
+      <div class="project-modal-body">
+        <h3>The Problem</h3>
+        <p>Genomic data is one of the most sensitive types of information. How can researchers collaborate or compare datasets (to find common genetic markers, for example) without revealing their <em>entire</em>, highly private dataset? This is a fundamental challenge in bioinformatics.</p>
+
+        <h3>My Solution</h3>
+        <p>As my BSc final project, I implemented a complex, academic-level protocol called <strong>Attribute-Based Private Set Intersection (AB-PSI)</strong>. This system allows two parties to find the common elements in their datasets (the "intersection") while revealing <em>nothing</em> about data that doesn't match.</p>
+
+        <h3>My Role & Key Features</h3>
+        <p>I built the system from the ground up, managing the full cryptographic lifecycle:</p>
+        <ul>
+          <li><strong>Data Pre-processing:</strong> Wrote scripts to read, clean, and hash raw nucleotide sequences (using SHA-256) to prepare them for the protocol.</li>
+          <li><strong>Access Control:</strong> Designed and implemented the Attribute-Based Access Control (ABAC) tree to manage user roles and permissions (e.g., "is_geneticist").</li>
+          <li><strong>Core Cryptography:</strong> Implemented the four main protocol phases: Setup, Key Generation, Data Blinding, and the final PSI Calculation, using the <code>PyPBC</code> library for bilinear pairings.</li>
+        </ul>
+
+        <h3>A "First Principles" Challenge</h3>
+        <p>The biggest challenge was not the high-level logic, but the unforgiving, low-level mathematics. For instance, a critical bug I found was in the <code>Pairing.apply()</code> function. In normal math, <code>A * B</code> equals <code>B * A</code>. But in the cyclic groups used by the library, the order is critical: <code>Pairing.apply(G1, G2)</code> does <strong>not</strong> equal <code>Pairing.apply(G2, G1)</code>. Debugging this required a deep dive into the underlying cryptographic theory, not just the Python code.</p>
+      </div>
+
+      
+      <footer class="project-modal-footer">
+        
+        
+        <div class="project-modal-links">
+          <a href="https://github.com/FarnoodID/AB_PSI" target="_blank" rel="noopener noreferrer" class="modal-link">
+            View on GitHub &rarr;
+          </a>
+          
+        </div>
+
+        
+        <div class="project-modal-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Cryptography</span>
+          <span class="tag">Data Privacy</span>
+          <span class="tag">Bioinformatics</span>
+          <span class="tag">Attribute-Based Access Control</span>
+          <span class="tag">PyPBC</span>
+        </div>
+
+      </footer>
+
+    </div>
+  </template>
+
+  <template id="project2">
+    
+    <div class="project-modal-content">
+
+      <header class="project-modal-header">
+        <h1 class="project-modal-title">Efficient Model Editing for Federated Learning</h1>
+        <p class="project-modal-subtitle">
+          A hybrid strategy, <code>pTaLoS</code>, for accelerating convergence in non-IID federated systems.
+        </p>
+      </header>
+
+      
+      <div class="project-modal-body">
+        <h3>The Problem</h3>
+        <p>Federated Learning (FL) is the future of privacy-centric AI, allowing models to be trained on data without that data ever leaving the user's device. However, this creates a massive systems challenge. When client data is heterogeneous (non-IID), as it always is in the real world, standard algorithms like <code>FedAvg</code> suffer from "client drift" and fail to converge efficiently.</p>
+
+        <h3>The Solution</h3>
+        <p>This project involved researching and implementing <strong><code>pTaLoS</code></strong>, a novel hybrid strategy to solve this problem. It intelligently blends two different model-editing techniques:</p>
+        <ul>
+          <li><strong>Global Editing (<code>TaLoS</code>):</strong> A global, sparse fine-tuning strategy that identifies and updates only the most sensitive parameters in the model, based on Fisher information.</li>
+          <li><strong>Personalized Editing (<code>pFedEdit</code>):</strong> A client-level technique that personalizes a small, select number of layers on each client's device to adapt to their unique local data.</li>
+        </ul>
+        <p>By dynamically scheduling these two strategies, <code>pTaLoS</code> balances the need for a strong global model with the reality of local data differences, leading to faster convergence and higher final accuracy.</p>
+
+        <h3>My Contributions & Key Features</h3>
+        <p>This project was a deep dive into the "first principles" of distributed ML systems. My specific contributions involved:</p>
+        <ul>
+          <li>
+            <strong>Algorithm Design:</strong> Implementing the novel <code>pTaLoS</code>
+            hybrid scheduling logic and the core <code>pFedEdit</code> and
+            <code>TaLoS</code> functions.
+          </li>
+          <li>
+            <strong>Custom Optimizer Development:</strong> Implementing the sparse-aware
+            optimizers (<strong><code>SparseAdamW</code></strong>,
+            <strong><code>SparseSGDM</code></strong>) required to apply the
+            model-editing masks to the correct parameters.
+          </li>
+          <li>
+            <strong>Distributed Systems Simulation:</strong> Building the end-to-end
+            simulation using the <strong><code>Flower (flwr)</code></strong>
+            framework and training the Vision Transformer (ViT) model.
+          </li>
+          <li>
+            <strong>Experiment Tracking & Analysis:</strong> Integrating
+            <strong><code>Weights & Biases (WandB)</code></strong> to rigorously
+            log all metrics and formally analyze performance against baselines.
+          </li>
+        </ul>
+      </div>
+
+      
+      <footer class="project-modal-footer">
+        
+        
+        <div class="project-modal-links">
+          <a href="https://github.com/Federated-Learning-Machine-Learning/federated-learning-project" target="_blank" rel="noopener noreferrer" class="modal-link">
+            View on GitHub &rarr;
+          </a>
+          
+          <a href="./assets/Federated_Learning.pdf" target="_blank" rel="noopener noreferrer" class="modal-link">
+            Read the Paper &rarr;
+          </a>
+        </div>
+        
+        
+        <div class="project-modal-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Federated Learning</span>
+          <span class="tag">Distributed Systems</span>
+          <span class="tag">Vision Transformer (ViT)</span>
+          <span class="tag">Model Pruning</span>
+          <span class="tag">Flower (flwr)</span>
+          <span class="tag">timm</span>
+          <span class="tag">Weights & Biases</span>
+        </div>
+
+      </footer>
+
+    </div>
+  </template>
+
+  
+  <template id="project3">
+    <div class="project-modal-content">
+
+      <header class="project-modal-header">
+        <h1 class="project-modal-title">Asynchronous Network Proxy</h1>
+        <p class="project-modal-subtitle">
+          A C++ SOCKS5 proxy server built from scratch with Boost.Asio for high-performance, asynchronous I/O.
+        </p>
+      </header>
+      <div class="project-modal-body">
+        <h3>The Problem</h3>
+        <p>Most developers use proxies, but few understand how they <em>work</em>. How does a server actually negotiate a connection on behalf of a client? How does it handle thousands of concurrent connections without blocking? How do you inspect and filter traffic at the packet level? This project was a deep dive to answer those "first principles" questions.</p>
+
+        <h3>My Solution</h3>
+        <p>I engineered a fully functional SOCKS5 proxy server in C++. The server is built on <strong>Boost.Asio</strong>, a foundational C++ library for asynchronous I/O, allowing it to manage thousands of concurrent TCP and UDP sessions efficiently.</p>
+        <p>The system handles the complete SOCKS5 handshake and request process, establishes a connection to the requested destination, and then shuttles data back and forth between the client and the remote host. It also includes a flexible, JSON-configurable filtering engine and detailed statistical logging.</p>
+        
+        <h3>My Role & Key Features</h3>
+        <p>I built this system from the ground up as a solo project. My work involved:</p>
+        <ul>
+          <li><strong>Core Server Logic:</strong> Implementing the asynchronous TCP server (in <code>Server.cpp</code>) to accept new connections and spawn individual <code>Session</code> instances for each client.</li>
+          <li><strong>SOCKS5 Protocol Implementation:</strong> Writing the state machine (in <code>Session.cpp</code>) to handle the multi-step SOCKS5 handshake and request, including parsing address types (IPv4, Domain) and commands.</li>
+          <li><strong>Asynchronous I/O:</strong> Using <code>boost::asio::async_read</code> and <code>async_write</code> to create a fully non-blocking data pipeline, enabling data to be read from the client and written to the server (and vice-versa) simultaneously.</li>
+          <li><strong>Filtering Engine:</strong> Designing a flexible filtering system (in <code>filterReader.cpp</code>) that parses rules from a JSON file. This allows for blocking or logging traffic based on IP, port, protocol, or domain names using C++ <code>std::regex</code>.</li>
+          <li><strong>Statistical Logging:</strong> Integrating the <code>spdlog</code> library to create a high-performance, multi-threaded logger (in <code>Log.cpp</code>). A separate thread periodically logs key statistics like active sessions, packet counts, and data volume for specific domains.</li>
+        </ul>
+
+        <h3>A "First Principles" Challenge</h3>
+        <p>The most significant challenge was mastering asynchronous, callback-based programming. In a simple, synchronous model, you <code>read()</code>, then you <code>write()</code>. In an async model with Boost.Asio, every operation is a request that returns immediately. You must chain callbacks together, passing the application's state (like the <code>shared_from_this()</code> pointer) to keep the session alive.</p>
+        <p>Debugging this is notoriously difficult. A logic error doesn't crash the program; it simply... stops. A session might be destroyed prematurely because a <code>shared_ptr</code> went out of scope. This project forced a deep, practical understanding of memory management, concurrency, and state machines; far beyond what a typical textbook provides.</p>
+      </div>
+      <footer class="project-modal-footer">
+        <div class="project-modal-links">
+          <a href="https://github.com/FarnoodID/Proxy" target="_blank" rel="noopener noreferrer" class="modal-link">
+            View on GitHub &rarr;
+          </a>
+        </div>
+        <div class="project-modal-tags">
+          <span class="tag">C++</span>
+          <span class="tag">Boost.Asio</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Systems Programming</span>
+          <span class="tag">Asynchronous I/O</span>
+          <span class="tag">SOCKS5</span>
+          <span class="tag">spdlog</span>
+          <span class="tag">std::regex</span> <!-- <-- FIXED 'class_tag' -->
+          <span class="tag">TCP/UDP</span>
+        </div>
+
+      </footer>
+    </div>
+  </template>
+
+</body>
+</html>
